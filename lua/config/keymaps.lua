@@ -23,3 +23,8 @@ vim.keymap.set("n", "<leader>ap", function()
   vim.fn.setreg("+", path)
   vim.notify("Yanked path: " .. path)
 end, { desc = "Yank relative path" })
+
+vim.keymap.set("n", "<Up>", "<nop>", { silent = true })
+vim.keymap.set("n", "<Down>", "<nop>", { silent = true })
+vim.keymap.set("n", "<Left>", "<nop>", { silent = true })
+vim.keymap.set("n", "<Right>", "<nop>", { silent = true })
