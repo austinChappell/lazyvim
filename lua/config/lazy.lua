@@ -19,6 +19,7 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "lazyvim.plugins.extras.linting.eslint" }, -- Enables ESLint fixing on save
+    { import = "lazyvim.plugins.extras.dap.core" }, -- nvim-dap + dap-ui + virtual text (see plugins/dap.lua)
     -- import/override with your plugins
     { import = "plugins" },
   },
